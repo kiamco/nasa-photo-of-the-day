@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-function AsteroidCards(props){
+function AsteroidCard(props){
+    const [ name, setName ] = useState(props.data);
+    console.log(name)
     return(
         <div className="card-container">
-            {/* iterate through props and create cards */}
+            <h2>{name}</h2>
+            <p>Is it a threat</p>
         </div>
     );
 }
+
+export default AsteroidCard ;

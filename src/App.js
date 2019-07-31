@@ -1,21 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Axios from "axios"
-import Nav from "../src/components/nav";
-
+import Header from "../src/components/header"
+import ClickMeBtn from "../src/components/ClickMe"
 function App() {
   const [asteroidData, setAsteroidData] = useState([]);
 
-  // Axios.get("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=DEMO_KEY")
-  // .then(response => {
-  //   console.log("Success:" + response);
-  //   setAsteroidData(response);
-  // })
-  // .catch(err => console.log(`App.js/ err: ${err}`))
+  useEffect(() => {
+    Axios.get("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=waG6Pxgs86IYfgqvWwCvEigiY4T8OIEjhveFqejn")
+  .then(response => {
+    console.log(response.data.near_earth_objects);
+    setAsteroidData(response.data.near_earth_objects.map(el => el.name));
+  })
+  .catch(err => console.log(`App.js/ err: ${err}`))
+  },[])
+
 
 
   return (
     <div className="App">
+      <Header />
+      <ClickMeBtn asteroids={asteroidData} />
     </div>
   );
 }

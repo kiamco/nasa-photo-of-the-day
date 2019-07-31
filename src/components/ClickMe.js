@@ -1,10 +1,19 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
+import AsteroidCard from "./AsteroidCard";
 
 function ClickMeBtn(props){
-    const populateAsteroids = () => {
-        //create cards
-    }
+    // console.log(props)
+    const [show,setShow] = useState(false);
+
+    const display = () => setShow(true);
+   
+    
     return(
-        <button>Click Me</button>
+        <div>
+            <button onClick={display}>Click Me</button>
+            {show && props.asteroids.map(el => <AsteroidCard data={el} />)}
+        </div>
     );
 }
+
+export default ClickMeBtn;

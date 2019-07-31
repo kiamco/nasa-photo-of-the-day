@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../src/components/nav";
+import Nav from "./nav";
 
 function Header(props){
     return(
@@ -14,3 +14,6 @@ function Header(props){
     );
 
 }
+
+
+export default Header;
