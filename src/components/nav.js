@@ -1,11 +1,11 @@
 import React from "react";
-
+import logo from "../img/logo.png"
 
 function Nav(props){
     return(
         <header>
             <div className="logo">
-                <img src="#" alt="log" />
+                <img src={logo}/>
                 <h1>Asteroids</h1>
             </div>
             <nav>

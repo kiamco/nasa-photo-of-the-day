@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 function AsteroidCard(props){
-    const [ name, setName ] = useState(props.data);
-    console.log(name)
+
+    console.log(props)
     return(
         <div className="card-container">
-            <h2>{name}</h2>
-            <p>Is it a threat</p>
+            <h2>{props.title}</h2>
+            <img src={props.img} alt='picture'></img>
+            <p>{props.explanation}</p>
         </div>
     );
 }
 
-export default AsteroidCard ;
+export default AsteroidCard;
