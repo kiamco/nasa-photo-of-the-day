@@ -20,6 +20,7 @@ function Icons(){
                 {like}
             </a>
         </div>
+       
         
         // <IconContainer>
         //     <Icon name='heart outline' size='large' />

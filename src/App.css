@@ -164,8 +164,8 @@ p {
   margin: auto 9%;
   height: 450px;
   border: 1px outset whitesmoke;
-  box-shadow: 10px;
-
+  box-shadow: 1rem black;
+  
 }
 
 .picture-container{
@@ -186,6 +186,6 @@ h1{
   text-align: center;
 }
 img {
-  max-width: 100%;
-  height: 100%;
+      max-width: 100%;
+      min-height: 100%;
 }
