@@ -1,12 +1,13 @@
 .header {
-  background: url("../img/Rectangle.png") no-repeat center center fixed;
+  background: url("../img/Rectangle.png") no-repeat center -177px fixed;
   background-size: cover;
-  min-height: 666px;
+  min-height: 321px;
 }
 
 .header h1 {
   font-size: 2rem;
   color: white;
   line-height: 1.5;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=header.css.map */

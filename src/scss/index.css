@@ -139,15 +139,16 @@ table {
 }
 
 .header {
-  background: url("../img/Rectangle.png") no-repeat center center fixed;
+  background: url("../img/Rectangle.png") no-repeat center -177px fixed;
   background-size: cover;
-  min-height: 666px;
+  min-height: 321px;
 }
 
 .header h1 {
   font-size: 2rem;
   color: white;
   line-height: 1.5;
+  margin-top: 50px;
 }
 
 header {
@@ -190,6 +191,10 @@ header .logo img {
   padding-right: 20px;
 }
 
+header .logo h1 {
+  margin-top: 0px;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,5 +212,48 @@ header nav a {
   text-decoration: none;
   color: white;
   padding-right: 20px;
+}
+
+.large-button {
+  background: black;
+  height: 100px;
+}
+
+.card-container {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 488px;
+  margin: 55px auto;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background: black;
+  color: white;
+}
+
+.card-container img {
+  margin: 20px 0;
+  max-width: 244px;
+}
+
+.card-container h1 {
+  font-size: 2rem;
+  padding: 10px 0;
+  font-weight: bolder;
+}
+
+.card-container p {
+  line-height: 1.2;
 }
 /*# sourceMappingURL=index.css.map */

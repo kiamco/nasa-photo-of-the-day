@@ -1,15 +1,13 @@
 import React from "react";
 import Nav from "./nav";
+import ClickMe from "./ClickMe";
 
 function Header(props){
     return(
         <div className="header">
             <Nav />
-            <h1>Discover what lies beyond.<br />
-            Push the<br />
-            <span>Butt</span>
-            on</h1>
-            
+            <h1>Discover what lies beyond.</h1>
+            {/* <ClickMe apodData={props.apodData}/> */}
         </div>
     );
 

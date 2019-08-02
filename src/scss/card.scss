@@ -1,0 +1,25 @@
+.card-container {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 488px;
+    margin: 55px auto;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background: black;
+    color: white;
+    img {
+        margin: 20px 0;
+        max-width: 244px;
+    }
+    h1 {
+        font-size: 2rem;
+        padding: 10px 0;
+        font-weight: bolder;
+    }
+    p {
+        line-height: 1.2;
+    }
+}

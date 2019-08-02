@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AsteroidCard from "./AsteroidCard";
+import { Button } from "semantic-ui-react";
 
 function ClickMeBtn(props){
     console.log(props)
@@ -9,8 +10,8 @@ function ClickMeBtn(props){
    
     
     return(
-        <div>
-            <button onClick={display}>Click Me</button>
+        <div class='large-button'>
+            <Button onClick={display} inverted color='red' size='massive'> Click Me</Button>
             {show && <AsteroidCard img={props.apodData.hdurl} explanation={props.apodData.explanation}  title={props.apodData.title}/>}
         </div>
     );

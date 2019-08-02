@@ -4,6 +4,7 @@ import Axios from "axios"
 import Header from "../src/components/header"
 import ClickMeBtn from "../src/components/ClickMe"
 import "../src/scss/index.css"
+
 function App() {
   const [apodData, setApodData] = useState();
 
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header apodData={apodData}/>
       <ClickMeBtn apodData={apodData}/>
     </div>
   );
