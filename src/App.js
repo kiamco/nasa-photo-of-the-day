@@ -2,14 +2,14 @@ import React, { useState, useEffect }from "react";
 import ApodImage from "./components/apodCard"
 import ApodDescription from "./components/apodDescription";
 import Axios from "axios";
+import "./App.css"
 
 
 function App() {
 
-  const [apodImg, setApodImg] = useState();
+  const [apodImg, setApodImg] = useState([]);
   const [title, setTitle] = useState();
   const [description, setDescription] =useState();
-    
   useEffect(() => {
     Axios.get("https://api.nasa.gov/planetary/apod?api_key=FpyUbGqSAHs5TkQWHCAZ3SJ1Cj5wnu5N1d9VKgjw")
       .then(response => {
@@ -22,11 +22,12 @@ function App() {
   }, [])
 
 
-
   return (
     <div className="App">
-      <ApodImage url={apodImg} />
-      <ApodDescription imgName={title} imgDescription={description} />
+      <div class="container">
+        <ApodImage url={apodImg} />
+        <ApodDescription imgName={title} imgDescription={description} />
+      </div>
     </div>
   );
 }

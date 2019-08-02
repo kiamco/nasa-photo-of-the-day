@@ -1,14 +1,13 @@
 import React, {useState} from "react";
-
+import Styled from "styled-components";
 function ApodCard(props) {
 
-    const [apodImage, setApodImage] = useState(props.url);
 
     return(
-        <div>
-            <img src={apodImage} alt="apod-picture" />
-        </div>  
-    );
+        <div class='picture-container'>
+            <img src={props.url} alt="apod-picture" />
+        </div>   
+     );
 }
 
 export default ApodCard;
