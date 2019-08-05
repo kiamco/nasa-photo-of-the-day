@@ -13,8 +13,11 @@ function Description(props){
         margin: 10px;
         width:50%;
         margin-left:25%;
-        border-radius: .5rem;
+        border-radius: .3rem;
         cursor:pointer;
+        &:hover{
+            background: #F0F0F0;
+        }
     `
 
 
@@ -22,7 +25,7 @@ function Description(props){
     return(
         <div className="img-description">
             <h1>{props.imgName}</h1>
-            <ReadMore onClick={() => setShow(show === false ? true : false)}>Description</ReadMore>
+            <ReadMore onClick={() => setShow(show === false ? true : false)}>description</ReadMore>
             <p>{show && props.imgDescription}</p>
             {/* add like icon and other */}
             <Icons />

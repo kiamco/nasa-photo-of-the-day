@@ -23,6 +23,9 @@ function Icons(){
                     {like}
                 </a>
             </div>
+            <Button icon>
+                <Icon name='share square outline' />
+            </Button>
         </IconContainer>
         
         // <IconContainer>
