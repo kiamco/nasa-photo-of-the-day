@@ -84,15 +84,17 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -104,91 +106,87 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 
 body {
-  line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .App {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  max-width: 700px;
-  margin: 50px auto;
-  height: 500px;
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 50px auto;
+    height: 500px;
 }
 
 p {
-  font-family: 'Roboto',
-    sans-serif;
-  font-size: 1rem;
-  text-indent: 1rem;
-  text-align: justify;
-  margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-indent: 1rem;
+    text-align: justify;
+    margin-top: 10px;
 }
 
 .container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: top;
-  max-width: 800px;
-  margin: auto 9%;
-  height: auto;
-  border: 1px outset whitesmoke;
-  box-shadow: 1rem black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: top;
+    max-width: 800px;
+    margin: auto 9%;
+    height: auto;
+    border: 1px outset whitesmoke;
+    box-shadow: 1rem black;
 }
 
 .picture-container {
-  min-width: 250px;
-
+    min-width: 250px;
 }
 
 .img-description {
-  margin: 10px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 h1 {
-  font-family: 'Roboto',
-    sans-serif;
-  font-size: 2rem;
-  text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
 }
 
 img {
-  max-width: 100%;
-  min-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
 }

@@ -9,7 +9,7 @@ function Icons(){
     const IconContainer = Styled.div`
     margin-top:10px;
     display:flex;
-    justify-content:center;
+    justify-content:left;
     `;
 
 
@@ -23,7 +23,10 @@ function Icons(){
                     {like}
                 </a>
             </div>
-            <Button icon>
+            <Button icon color="blue">
+                <Icon name='comment outline' />
+            </Button>
+            <Button icon color="green">
                 <Icon name='share square outline' />
             </Button>
         </IconContainer>
