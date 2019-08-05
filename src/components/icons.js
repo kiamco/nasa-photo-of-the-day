@@ -8,19 +8,22 @@ function Icons(){
 
     const IconContainer = Styled.div`
     margin-top:20px;
+    display:flex;
+    justify-content:center;
     `;
 
 
     return(
-        <div class="ui labeled button" tabindex="0">
-            <div onClick={() => setLike(like + 1)} class="ui red button">
-                <i class="heart icon"></i> Like
+        <IconContainer>
+            <div class="ui labeled button" tabindex="0">
+                <div onClick={() => setLike(like + 1)} class="ui red button">
+                    <i class="heart icon"></i> Like
+                </div>
+                <a class="ui basic label">
+                    {like}
+                </a>
             </div>
-            <a class="ui basic label">
-                {like}
-            </a>
-        </div>
-       
+        </IconContainer>
         
         // <IconContainer>
         //     <Icon name='heart outline' size='large' />

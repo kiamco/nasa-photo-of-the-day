@@ -157,12 +157,12 @@ p {
 }
 .container{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-around;
   align-items: top;
   max-width: 800px;
   margin: auto 9%;
-  height: 450px;
+  height: auto;
   border: 1px outset whitesmoke;
   box-shadow: 1rem black;
   
