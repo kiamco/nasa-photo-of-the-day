@@ -134,7 +134,7 @@ table {
   border-spacing: 0;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -143,19 +143,21 @@ table {
   flex-flow: row nowrap;
   justify-content: space-around;
   max-width: 700px;
-  margin: 50px auto ;
+  margin: 50px auto;
   height: 500px;
 
 }
+
 p {
   font-family: 'Roboto',
-  sans-serif;
-  font-size:1rem;
+    sans-serif;
+  font-size: 1rem;
   text-indent: 1rem;
   text-align: justify;
-  margin-top:10px;
+  margin-top: 10px;
 }
-.container{
+
+.container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -165,27 +167,28 @@ p {
   height: auto;
   border: 1px outset whitesmoke;
   box-shadow: 1rem black;
-  
 }
 
-.picture-container{
+.picture-container {
   min-width: 250px;
+
 }
 
-.img-description{
-    margin: 10px;
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
+.img-description {
+  margin: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 
-h1{
+h1 {
   font-family: 'Roboto',
-  sans-serif;
-  font-size:2rem;
+    sans-serif;
+  font-size: 2rem;
   text-align: center;
 }
+
 img {
-      max-width: 100%;
-      min-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
 }

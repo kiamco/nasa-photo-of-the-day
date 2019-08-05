@@ -7,7 +7,7 @@ function Icons(){
     const [like, setLike] = useState(0)
 
     const IconContainer = Styled.div`
-    margin-top:20px;
+    margin-top:10px;
     display:flex;
     justify-content:center;
     `;
