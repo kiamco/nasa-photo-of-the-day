@@ -154,7 +154,8 @@ p {
     font-size: 1rem;
     text-indent: 1rem;
     text-align: justify;
-    margin-top: 10px;
+    margin: 20px;
+    line-height: 1.5rem;
 }
 
 .container {
