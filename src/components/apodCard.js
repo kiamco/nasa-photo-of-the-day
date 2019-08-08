@@ -4,7 +4,7 @@ function ApodCard(props) {
 
 
     return(
-        <div class='picture-container'>
+        <div className='picture-container'>
             <img src={props.url} alt="apod-picture" />
         </div>   
      );

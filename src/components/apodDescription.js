@@ -19,14 +19,13 @@ function Description(props){
             background: #F0F0F0;
         }
     `
-
-
-    
+        
     return(
         <div className="img-description">
             <h1>{props.imgName}</h1>
             <ReadMore onClick={() => setShow(show === false ? true : false)}>description</ReadMore>
-            <p>{show && props.imgDescription}</p>
+            {show && <p className='description'>{props.imgDescription}</p> }
+            {/* <p className='description'>{show && props.imgDescription}</p> */}
             {/* add like icon and other */}
             <Icons />
         </div>

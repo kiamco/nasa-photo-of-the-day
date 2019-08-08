@@ -7,16 +7,18 @@ import "./App.css"
 
 function App() {
 
-  const [apodImg, setApodImg] = useState([]);
+  const [apodImg, setApodImg] = useState();
   const [title, setTitle] = useState();
   const [description, setDescription] =useState();
     useEffect(() => {
       Axios.get("https://api.nasa.gov/planetary/apod?api_key=FpyUbGqSAHs5TkQWHCAZ3SJ1Cj5wnu5N1d9VKgjw")
         .then(response => {
           console.log(response);
-          setApodImg(response.data.hdurl);
-          setTitle(response.data.title);
-          setDescription(response.data.explanation)
+          const {hdurl, title , explanation} = response.data 
+          console.log(hdurl)
+          setApodImg(hdurl);
+          setTitle(title);
+          setDescription(explanation)
         })
         .catch(err => console.log(`App.js/ err: ${err}`))
     }, [])

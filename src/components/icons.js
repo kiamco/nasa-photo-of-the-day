@@ -15,11 +15,11 @@ function Icons(){
 
     return(
         <IconContainer>
-            <div class="ui labeled button" tabindex="0">
-                <div onClick={() => setLike(like + 1)} class="ui red button">
-                    <i class="heart icon"></i> Like
+            <div className="ui labeled button" tabindex="0">
+                <div onClick={() => setLike(like + 1)} className="ui red button">
+                    <i className="heart icon"></i> Like
                 </div>
-                <a class="ui basic label">
+                <a className="ui basic label">
                     {like}
                 </a>
             </div>
