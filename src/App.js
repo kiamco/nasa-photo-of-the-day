@@ -13,9 +13,8 @@ function App() {
     useEffect(() => {
       Axios.get("https://api.nasa.gov/planetary/apod?api_key=FpyUbGqSAHs5TkQWHCAZ3SJ1Cj5wnu5N1d9VKgjw")
         .then(response => {
-          console.log(response);
+          console.log(`Success: ${response}`);
           const {hdurl, title , explanation} = response.data 
-          console.log(hdurl)
           setApodImg(hdurl);
           setTitle(title);
           setDescription(explanation)
