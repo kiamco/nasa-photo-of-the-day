@@ -7,8 +7,7 @@ const Load = () => {
     const LoadingContainer = Styled.div`
     height:100%
     `
-
-
+    
     return (
     <div>
         <LoadingContainer>
