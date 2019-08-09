@@ -182,3 +182,28 @@ img {
     max-width: 100%;
     min-height: 100%;
 }
+
+@media (max-width: 1300px) {
+    .content {
+        columns: 4;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content {
+        columns: 3;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .content {
+        columns: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        columns: 1;
+    }
+}
