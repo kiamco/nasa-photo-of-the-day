@@ -17,7 +17,7 @@ function Icons(){
         <IconContainer>
             <div className="ui labeled button" tabindex="0">
                 <div onClick={() => setLike(like + 1)} className="ui red button">
-                    <i className="heart icon"></i> Like
+                    <i className="heart icon"></i>
                 </div>
                 <a className="ui basic label">
                     {like}
