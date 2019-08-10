@@ -3,11 +3,13 @@ import Loading from './components/loading'
 import Axios from "axios";
 import "./App.css"
 import ApodList from './components/apodList'
+import Moment from 'moment';
 
 
 function App() {
-
-  const [dateSpan, setDateSpan] = useState("&start_date=2017-06-20&end_date=2017-07-10");
+  const [endspan, setEndSpan] = useState(Moment().format('YYYY-MM-DD'))
+  const [startSpan, setStartSpan] = useState(Moment().subtract(20, 'days').format('YYYY-MM-DD'));
+  const [dateSpan, setDateSpan] = useState(`&start_date=${startSpan}&end_date=${endspan}`);
   const [apodData, setApodData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -24,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <div class="container">
+      <div className="container">
         {loading ? <Loading /> : <ApodList data={apodData} />}
         {/* <ApodList data={apodData} /> */}
       </div>
