@@ -20,6 +20,8 @@ function ApodCard(props) {
         }
     `
 
+    
+
     return(
         <div className='content-info'>
             <div className='picture-container'>
